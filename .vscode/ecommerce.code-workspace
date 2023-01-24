@@ -1,0 +1,120 @@
+{
+	"folders": [
+		{
+			"name": "@root",
+			"path": "../"
+		},
+		{
+			"path": "../frontend"
+		},
+		{
+			"path": "../shared"
+		}
+	],
+	"settings": {
+	  // EXPERIMENTAL exclusion of top-level folders from the `root` workspace folder
+	  "files.exclude": {
+		"@**/": true
+	  },
+	  // Format code on save with VS Code Prettier extension
+	  "[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  "[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  "[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  "[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  "[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  "[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	  },
+	  // Fix trivial lint issues on save with VSCode extensions
+	  "editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": false, // autofix doesn't work with styled-components
+		"source.fixAll.markdownlint": true
+	  },
+	  // Validating `package.json` in VSCode with ESLint Extension on save
+	  "eslint.validate": ["json"],
+	  // Override language identifier for Rush settings to `jsonc`
+	  "files.associations": {
+		"**/common/config/rush/*.json": "jsonc",
+		"rush.json": "jsonc"
+	  },
+	  // Code spell checker workspace dictionary, add new words here as needed
+	  "cSpell.words": [
+		"cicd",
+		"esbuild",
+		"mkdir",
+		"nextjs",
+		"npmjs",
+		"npmrc",
+		"ootb",
+		"pnpm",
+		"reseter",
+		"rushx",
+		"svgr",
+		"testid",
+		"webp",
+		"xargs",
+		"xsmall",
+		"yarpm"
+	  ],
+	  // git commit rulers to assist with line length
+	  "[git-commit]": {
+		"editor.rulers": [
+		  {
+			"column": 72,
+			"color": "#FFFF00"
+		  },
+		  {
+			"column": 100,
+			"color": "#ff0000"
+		  }
+		]
+	  },
+	  "[git-rebase]": {
+		"editor.rulers": [
+		  {
+			"column": 72,
+			"color": "#FFFF00"
+		  },
+		  {
+			"column": 100,
+			"color": "#ff0000"
+		  }
+		]
+	  },
+	  "search.exclude": {
+		"**/.next": true,
+		"**/coverage": true,
+		"**/storybook-static": true
+	  }
+	},
+	"extensions": {
+	  "recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"stylelint.vscode-stylelint",
+		"jpoissonnier.vscode-styled-components",
+		"orta.vscode-jest",
+		"streetsidesoftware.code-spell-checker",
+		"silvenon.mdx",
+		"davidanson.vscode-markdownlint",
+		"webben.browserslist"
+	  ]
+	}
+}

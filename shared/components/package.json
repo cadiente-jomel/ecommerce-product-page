@@ -1,0 +1,47 @@
+{
+  "name": "@shared/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/styled-components": "~5.1.26",
+    "babel-loader": "^8.3.0",
+    "next": "~13.1.4",
+    "ts-node": "~10.9.1",
+    "typescript": "~4.9.4",
+    "css-loader": "~6.7.3",
+    "style-loader": "~3.3.1",
+    "url-loader": "~4.1.1",
+    "storybook-addon-next": "~1.7.1",
+    "storybook-addon-state": "~1.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "~18.11.18",
+    "@types/react": "~18.0.27",
+    "@types/react-dom": "~18.0.10",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "styled-components": "~5.3.6",
+    "css-loader": "~6.7.3",
+    "style-loader": "~3.3.1",
+    "http-proxy-middleware": "~2.0.6",
+    "@storybook/addon-controls": "~6.5.15"
+  }
+}
