@@ -1,0 +1,23 @@
+{
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "explorer.confirmDelete": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        
+    },
+   "[typescript]":{
+       "editor.defaultFormatter": "esbenp.prettier-vscode",
+       "editor.formatOnSave": true
+   },
+   "[javascript]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+    },
+
+    "prettier.semi": false,
+    "editor.formatOnSave": true,
+
+}
